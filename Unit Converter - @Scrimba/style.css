@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    background: #1c1c1c;
+    box-sizing: border-box;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  
+}
+
+.upper{
+    width: 600px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    background: linear-gradient(246.26deg, #585DFE 0%, #FB3796 100%);
+    text-align: center;
+    padding: 40px 0px;
+    display: flex;
+    margin: 100px auto 0px auto;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.upper p{
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+    font-weight: 800;
+}
+
+
+.lower{
+    width: 600px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background: #1f2937;
+    text-align: center;
+    padding: 10px 0px 30px 0px;
+    margin: 0px auto 100px auto;
+}
+
+
+.lower p{
+    color: #aeaeae;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    margin: 35px 10px 0px 10px;
+    font-size: 16px;
+    
+}
+
+
+:focus::placeholder {
+    color:transparent;
+}
+
+
+::placeholder {
+    color: rgb(255, 255, 255);
+    filter: opacity(60%);
+    
+}
+
+
+#num {
+    width: 600px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    outline:none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 60px; 
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+
+#submit {
+    color: transparent; 
+    background-color: transparent; 
+    border-color: transparent; 
+    cursor: default;
+}
+
+
+
+.blinking{
+    animation:blinkingText 3s infinite;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    filter: opacity(60%);
+}
+@keyframes blinkingText{
+    0%{     color: rgb(255, 255, 255);    }
+    49%{    color: rgb(255, 255, 255); }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: rgb(255, 255, 255);    }
+}

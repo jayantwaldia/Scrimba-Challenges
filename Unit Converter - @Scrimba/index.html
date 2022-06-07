@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <div class="upper">
+      <p>Metric/Imperial Unit Converter</p>
+      <input type="input" id="num" placeholder="0" onkeyup="return submitName(event);" autofocus>
+      <button type="button" id="submit"></button>
+      <span class="blinking">Type number & hit Enter</span>
+    </div>
+    <div class="lower">
+      <p style="color: aquamarine;">(Meter/Feet)</p>
+      <p id="length">0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
+      <p style="color: aquamarine;">(Liters/Gallons)</p>
+      <p id="volume">0 liters = 0.000 gallons | 0 gallons = 0.000 liters</p>
+      <p style="color: aquamarine;">(Kilograms/Pounds)</p>
+      <p id="mass">0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
